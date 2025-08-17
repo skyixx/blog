@@ -1,0 +1,36 @@
+base_url = "https://colorsky.fun"
+theme = "apollo"
+title = "ColorSkyFun"
+description = "The blog of ColorSkyFun"
+build_search_index = true
+generate_feeds = true
+compile_sass = true
+minify_html = true
+taxonomies = [{ name = "tags" }]
+
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-dark", filename = "syntax-theme-dark.css" },
+  { theme = "ayu-light", filename = "syntax-theme-light.css" },
+]
+
+
+[extra]
+toc = true
+theme = "dark"
+dynamic_note=true
+socials = [
+    { name = "github", url = "https://github.com/skyixx/", icon = "github" },
+    { name = "email", url = "mailto://i@colorsky.fun", icon = "email"}
+]
+menu = [
+    { name = "/posts", url = "/posts", weight = 1 },
+    { name = "/projects", url = "/projects", weight = 2 },
+    { name = "/tags", url = "/tags", weight = 3 },
+]
+
